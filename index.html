@@ -9,16 +9,20 @@
 </head>
 <body>
     <header>
-        <h1>Conference Name</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="speakers.html" hx-get="partials/speakers.html" hx-trigger="click" hx-target="#content">Speakers</a></li>
-                <li><a href="schedule.html" hx-get="partials/schedule.html" hx-trigger="click" hx-target="#content">Schedule</a></li>
-                <li><a href="venue.html" hx-get="partials/venue.html" hx-trigger="click" hx-target="#content">Venue</a></li>
-                <li><a href="media.html" hx-get="partials/media.html" hx-trigger="click" hx-target="#content">Media</a></li>
-            </ul>
-        </nav>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Conference Logo" class="logo">
+        </div>
+        <div class="navbar-container">
+            <nav>
+                <ul>
+                    <li><a href="index.html" hx-get="partials/home.html" hx-trigger="click" hx-target="#content">Home</a></li>
+                    <li><a href="speakers.html" hx-get="partials/speakers.html" hx-trigger="click" hx-target="#content">Speakers</a></li>
+                    <li><a href="schedule.html" hx-get="partials/schedule.html" hx-trigger="click" hx-target="#content">Schedule</a></li>
+                    <li><a href="venue.html" hx-get="partials/venue.html" hx-trigger="click" hx-target="#content">Venue</a></li>
+                    <li><a href="media.html" hx-get="partials/media.html" hx-trigger="click" hx-target="#content">Media</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main id="content" hx-get="partials/home.html" hx-trigger="load">
     </main>
