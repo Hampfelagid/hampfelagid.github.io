@@ -25,7 +25,14 @@ header {
   max-width: 500px;
   text-align: left;
   margin: 0 auto;
-  padding-bottom: 60px;
+}
+
+.speakers {
+}
+.speaker-text {
+  max-width: 500px;
+  text-align: left;
+  margin: 0 auto;
 }
 
 .hamburger-menu {
@@ -82,6 +89,7 @@ nav ul li a:hover {
 main {
     padding: 20px;
     text-align: center;
+  padding-bottom: 70px;
 }
 
 footer {
@@ -93,6 +101,44 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+.schedule-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.schedule-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.day-schedule {
+    margin-bottom: 40px;
+}
+
+.day-schedule h3 {
+    background-color: darkgreen;
+    color: white;
+    padding: 10px;
+    margin: 0 -20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
 
 @media (max-width: 768px) {
     .logo {
@@ -110,5 +156,8 @@ footer {
     }
     nav ul li {
         margin: 10px 0;
+    }
+  .day-schedule h3 {
+        margin: 0;
     }
 }
