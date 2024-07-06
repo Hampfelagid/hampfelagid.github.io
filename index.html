@@ -4,36 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conference Name</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="/styles/styles.css">
     <script src="https://unpkg.com/htmx.org@1.6.1"></script>
 </head>
 <body>
     <header>
+
       <div class="top-bar">
         <div class="logo-container">
-            <img src="images/logo.png" alt="Conference Logo" class="logo">
+            <img src="/images/logo.png" alt="Conference Logo" class="logo">
         </div>
       <div class="language-selector">
-        <a href="en/index.html"><img src="/images/flag-en.png" class="language-flag"></a>
+        <a href="/en/index.html"><img src="/images/flag-en.png" class="language-flag"></a>
             </div>
+        <br>
+        <div class="hamburger-menu" id="hamburger-menu" onclick="toggleMenu()">≡</div>
       </div>
-        <div class="navbar-container">
+        <div class="navbar-container" id="navbar">
             <nav>
                 <ul>
-                    <li><a href="index.html" hx-get="partials/home.html" hx-trigger="click" hx-target="#content">Home</a></li>
-                    <li><a href="speakers.html" hx-get="partials/speakers.html" hx-trigger="click" hx-target="#content">Speakers</a></li>
-                    <li><a href="schedule.html" hx-get="partials/schedule.html" hx-trigger="click" hx-target="#content">Schedule</a></li>
-                    <li><a href="venue.html" hx-get="partials/venue.html" hx-trigger="click" hx-target="#content">Venue</a></li>
-                    <li><a href="media.html" hx-get="partials/media.html" hx-trigger="click" hx-target="#content">Media</a></li>
+                    <li><a href="index.html" hx-get="/partials/home.html" hx-trigger="click" hx-target="#content">Home</a></li>
+                    <li><a href="speakers.html" hx-get="/partials/speakers.html" hx-trigger="click" hx-target="#content">Speakers</a></li>
+                    <li><a href="schedule.html" hx-get="/partials/schedule.html" hx-trigger="click" hx-target="#content">Schedule</a></li>
+                    <li><a href="venue.html" hx-get="/partials/venue.html" hx-trigger="click" hx-target="#content">Venue</a></li>
+                    <li><a href="media.html" hx-get="/partials/media.html" hx-trigger="click" hx-target="#content">Media</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main id="content" hx-get="partials/home.html" hx-trigger="load">
+    <main id="content" hx-get="/partials/home.html" hx-trigger="load">
     </main>
     <footer>
         <p>&copy; 2024 Hampur Fyrir Framtíðina</p>
     </footer>
+    <script>
+function toggleMenu() {
+            const navbar = document.getElementById('navbar');
+            if (navbar.style.display === 'block') {
+                navbar.style.display = 'none';
+            } else {
+                navbar.style.display = 'block';
+            }
+        }
+
+        window.addEventListener('resize', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.innerWidth > 768) {
+                navbar.style.display = 'block';
+            } else {
+                navbar.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>
 
