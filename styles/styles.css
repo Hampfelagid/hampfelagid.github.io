@@ -21,9 +21,31 @@ header {
     width: 500px;
 }
 
+.main-text {
+  max-width: 500px;
+  text-align: left;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+
 .navbar-container {
     border-top: 5px solid darkgreen;
     padding-top: 20px;
+}
+
+.language-selector {
+    margin-right: 20px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.language-flag {
+  width: 20px;
 }
 
 nav ul {
