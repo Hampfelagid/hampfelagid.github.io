@@ -22,15 +22,16 @@ header {
 }
 
 .main-text {
-  max-width: 500px;
+  max-width: 600px;
   text-align: left;
   margin: 0 auto;
 }
 
 .speakers {
 }
+
 .speaker-text {
-  max-width: 500px;
+  max-width: 600px;
   text-align: left;
   margin: 0 auto;
 }
@@ -181,7 +182,7 @@ table th {
 
 .speaker-bio {
     display: flex;
-    max-width: 800px;
+    max-width: 600px;
     margin: 20px auto;
     padding: 20px;
     border: 1px solid #ddd;
