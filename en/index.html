@@ -24,7 +24,13 @@
             <nav>
                 <ul>
                     <li><a href="index.html" hx-get="/en/partials/home.html" hx-trigger="click" hx-target="#content">Home</a></li>
-                    <li><a href="about.html" hx-get="/en/partials/about.html" hx-trigger="click" hx-target="#content">Um okkur</a></li>
+                    <li class="dropdown">
+                      <a href="about.html" hx-get="/en/partials/about-conference.html" hx-trigger="click" hx-target="#content">Um okkur</a>
+                        <div class="dropdown-content">
+                          <a href="conference.html" hx-get="/en/partials/about-conference.html" hx-trigger="click" hx-target="#content">Um Ráðstefnuna</a>
+                          <a href="conference.html" hx-get="/en/partials/about-hampfelagid.html" hx-trigger="click" hx-target="#content">Um Hampfelagid</a>
+                        </div>      
+                    </li>
                     <li class="dropdown">
                         <a href="speakers.html" hx-get="partials/speakers.html"  hx-trigger="click" hx-target="#content">Speakers</a>                        <div class="dropdown-content">
                                         <div class="dropdown-list">
