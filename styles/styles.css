@@ -202,6 +202,7 @@ table th {
 
 .bio-text {
     flex: 2;
+    text-align: right;
 }
 
 .bio-text h2 {
